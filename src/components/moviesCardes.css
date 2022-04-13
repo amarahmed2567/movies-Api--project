@@ -1,0 +1,43 @@
+.movie{
+    width: 350px;
+    height: 400px;
+    display:flex;
+    flex-direction: column;
+    margin: 1rem;
+    background-color: rgba(41, 40, 40, 0.84);
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+}
+
+.movie .img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.movie .img img{
+    width: 100%;
+    height: 100%;
+}
+.movie:hover .img img{
+    filter:grayscale(90%);
+}
+.movie h3{
+    line-height: 2;
+    padding-left: .5rem;
+}
+.movie .inf-text{
+position: absolute;
+display: flex;
+justify-content: space-between;
+width: 100%;
+padding: 1rem;
+background-color: rgba(41, 40, 40, 0.84);
+display: none;
+transition: all .3s ease-in-out;
+}
+.movie:hover .inf-text{
+display: flex;
+}
